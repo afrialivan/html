@@ -1,0 +1,54 @@
+<h1 id="a"></h1>
+<a href="y.html">a</a>
+<button onclick="on()">oi</button>
+
+
+<style>
+  @font-face {
+    font-family: Poppins;
+    src: url('Poppins/Poppins-Regular.ttf');
+  }
+  @font-face {
+    font-family: roboto ;
+    src: url('Roboto/Roboto-Light.ttf');
+  }
+
+
+
+
+  h1 {
+    font-family: roboto;
+  }
+</style>
+
+
+<script>
+
+  const body = document.querySelector('body')
+  
+  let aktif = false
+  function on(aktif){
+    if(!aktif) {
+      body.style.backgroundColor = 'black'
+      aktif = true
+    } 
+    else {
+      body.style.backgroundColor = 'white'
+      aktif = false
+    }
+
+  }
+
+
+
+
+  sessionStorage.setItem('nama', 'afrial')
+
+  let hasil = sessionStorage.getItem('nama', 'afrial')
+
+  const h = document.getElementById('a')
+
+  h.innerHTML = hasil 
+
+
+</script>
